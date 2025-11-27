@@ -71,15 +71,15 @@ const config = {
         // List of bank accounts for digital envelope/gifts
         banks: [{
                 // Bank name
-                bank: "Bank Central Asia",
+                bank: "Bank Negara Indonesia",
                 // Account number
-                accountNumber: "1234567890",
+                accountNumber: "1331796246",
                 // Account holder name (all uppercase)
                 accountName: "Akbar",
             },
             {
-                bank: "Bank Mandiri",
-                accountNumber: "0987654321",
+                bank: "Bank Negara Indonesia",
+                accountNumber: "1220942910",
                 accountName: "Sri",
             }
             // You can add more banks with the same format

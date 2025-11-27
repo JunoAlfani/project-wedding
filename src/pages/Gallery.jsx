@@ -48,7 +48,7 @@ export default function Gallery() {
           {images.map((item, index) => (
             <motion.div
               key={index}
-              className="flex-shrink-0 w-62 md:w-80 snap-center bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-lg transition-transform duration-300"
+              className="flex-shrink-0 w-52 md:w-80 snap-center bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-lg transition-transform duration-300"
               whileHover={{ scale: 1.03 }}
             >
               <img
