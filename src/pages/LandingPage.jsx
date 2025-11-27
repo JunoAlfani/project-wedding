@@ -83,10 +83,8 @@ export default function LandingPage({ onOpenInvitation }) {
           >
             {/* 🎬 Background video */}
             <video
-              className="absolute inset-0 w-full h-full object-cover scale-[1.0]" // 👈 zoom dikurangi (bisa ubah jadi 1.0 atau 0.9)
-              style={{
-                objectPosition: 'center center',
-              }}
+              className="absolute inset-0 w-full h-full object-cover" // 👈 zoom dikurangi (bisa ubah jadi 1.0 atau 0.9)
+              style={{ transform: 'scale(1)', objectPosition: 'center center', opacity: 0.9 }}
               src="/video/heroes_bg.mp4"
               autoPlay
               muted
