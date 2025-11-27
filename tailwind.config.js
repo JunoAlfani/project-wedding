@@ -2,12 +2,7 @@
 export default {
     darkMode: ["class"],
     content: [
-        "./index.html",
-        "./public/index.html",
-        "./src/**/*.{js,jsx,ts,tsx}",
-        "./components/**/*.{js,jsx,ts,tsx}",
-        "./pages/**/*.{js,jsx,ts,tsx}",
-        "./app/**/*.{js,jsx,ts,tsx}",
+        "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
         extend: {
@@ -102,17 +97,7 @@ export default {
                 'profile-married': "url('/images/profile-married.png')"
 
             },
-            safelist: [
-                'bg-profile-married',
-                'bg-floral-1',
-                'bg-floral-2',
-                'backdrop-blur-sm',
-                'backdrop-blur-md',
-                'w-full',
-                'max-w-md',
-                'min-h-screen',
-                'w-8', 'w-10', 'w-12', 'w-16', 'w-20', 'w-24', 'w-28', 'w-32', 'w-40', 'w-48', 'w-56', 'w-64'
-            ]
+
         }
     },
     plugins: [require("tailwindcss-animate")],
