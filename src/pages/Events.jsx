@@ -56,7 +56,7 @@ export default function Events() {
                             transition={{ delay: 0.4 }}
                             className="text-black-500 max-w-md mx-auto"
                         >
-                            Kami Mengundang Anda untuk Merayakan Hari Istimewa Sebagai Awal Perjalanan Cinta Kami
+                            Turut Mengundang Anda untuk Merayakan Hari Istimewa Sebagai Awal Perjalanan Cinta Kami
                         </motion.p>
 
                         {/* Decorative Line */}
@@ -67,11 +67,11 @@ export default function Events() {
                             transition={{ delay: 0.5 }}
                             className="flex items-center justify-center gap-4 mt-6"
                         >
-                            <div className="h-[1px] w-12 bg-rose-200" />
-                            <div className="text-rose-400">
+                            <div className="h-[1px] w-12 bg-red-200" />
+                            <div className="text-red-700">
                                 <Heart className="w-4 h-4" fill="currentColor" />
                             </div>
-                            <div className="h-[1px] w-12 bg-rose-200" />
+                            <div className="h-[1px] w-12 bg-red-200" />
                         </motion.div>
                     </motion.div>
 

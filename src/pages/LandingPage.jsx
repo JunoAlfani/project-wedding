@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Clock } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
-// 🌸 Efek bunga jatuh lembut dengan 2 variasi (Sakura & Melati)
+// Efek melati jatuh lembut 
 const FlowerFallingEffect = () => {
   const [flowers, setFlowers] = useState([]);
 
   useEffect(() => {
-    const flowerTypes = ['🌸', '🤍']; // 🌸 Sakura, 🤍 Melati
+    const flowerTypes = ['🤍']; // 🤍 Melati
     const generated = Array.from({ length: 24 }, (_, i) => ({
       id: i,
       left: Math.random() * 100,
@@ -115,14 +115,14 @@ export default function LandingPage({ onOpenInvitation }) {
                   {/* Tanggal & waktu */}
                   <div className="flex flex-col gap-2 mb-4 items-center">
                     <div className="inline-flex flex-col items-center space-y-1 bg-white/80 px-6 py-3 rounded-xl">
-                      <Calendar className="w-5 h-5 text-rose-400" />
+                      <Calendar className="w-5 h-5 text-red-800" />
                       <p className="text-gray-700 font-medium">
                         {formatEventDate(config.data.date)}
                       </p>
                     </div>
 
                     <div className="inline-flex flex-col items-center space-y-1 bg-white/80 px-6 py-3 rounded-xl">
-                      <Clock className="w-5 h-5 text-rose-400" />
+                      <Clock className="w-5 h-5 text-red-800" />
                       <p className="text-gray-700 font-medium">
                         {config.data.time}
                       </p>
@@ -133,7 +133,7 @@ export default function LandingPage({ onOpenInvitation }) {
                   <div className="text-center space-y-2">
                     <h1 className="text-4xl md:text-5xl font-serif text-gray-800 leading-tight">
                       {config.data.groomName}
-                      <span className="text-rose-400 mx-2">&</span>
+                      <span className="text-red-700 mx-2">&</span>
                       {config.data.brideName}
                     </h1>
                     <div className="h-px w-24 mx-auto bg-rose-200" />
@@ -145,7 +145,7 @@ export default function LandingPage({ onOpenInvitation }) {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.97 }}
                     onClick={handleOpen}
-                    className="relative bg-rose-500 text-white px-8 py-3 rounded-xl font-medium shadow-lg hover:bg-rose-600 transition-all duration-200 w-52 mx-auto block text-center"
+                    className="relative bg-red-800 text-white px-8 py-3 rounded-xl font-medium shadow-lg hover:bg-rose-600 transition-all duration-200 w-52 mx-auto block text-center"
                   >
                     <span className="relative z-10 flex items-center justify-center gap-2">
                       <span>Buka Undangan</span>
@@ -165,7 +165,7 @@ export default function LandingPage({ onOpenInvitation }) {
         )}
       </AnimatePresence>
 
-      {/* 🌺 Efek transisi buka gerbang */}
+      {/* Efek transisi buka gerbang */}
       {isTransitioning && (
         <>
           {/* Pintu kiri */}
@@ -174,7 +174,7 @@ export default function LandingPage({ onOpenInvitation }) {
             animate={{ x: '-100%' }}
             transition={{ duration: 2, ease: 'easeInOut' }}
             className="absolute left-0 top-0 w-1/2 h-full 
-                      bg-gradient-to-r from-[#B03052] via-[#D76A7C] to-[#FAD3D3]
+                      bg-gradient-to-r from-[#6b0e0e] via-[#941e1e] to-[#FAD3D3]
                       shadow-2xl z-20 origin-left"
           />
 
@@ -184,7 +184,7 @@ export default function LandingPage({ onOpenInvitation }) {
             animate={{ x: '100%' }}
             transition={{ duration: 2, ease: 'easeInOut' }}
             className="absolute right-0 top-0 w-1/2 h-full 
-                      bg-gradient-to-l from-[#B03052] via-[#D76A7C] to-[#FAD3D3]
+                      bg-gradient-to-r from-[#FAD3D3] via-[#941e1e] to-[#6b0e0e]
                       shadow-2xl z-20 origin-right"
           />
         </>

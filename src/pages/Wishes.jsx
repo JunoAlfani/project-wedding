@@ -80,7 +80,7 @@ export default function Wishes() {
             case 'attending':
                 return <CheckCircle className="w-4 h-4 text-emerald-500" />;
             case 'not-attending':
-                return <XCircle className="w-4 h-4 text-rose-500" />;
+                return <XCircle className="w-4 h-4 text-red-800" />;
             case 'maybe':
                 return <HelpCircle className="w-4 h-4 text-amber-500" />;
             default:
@@ -102,7 +102,7 @@ export default function Wishes() {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="inline-block text-rose-500 font-medium"
+                        className="inline-block text-red-700 font-medium"
                     >
                         Kirimkan Doa dan Harapan Terbaik Anda
                     </motion.span>
@@ -123,9 +123,9 @@ export default function Wishes() {
                         transition={{ delay: 0.4 }}
                         className="flex items-center justify-center gap-4 pt-4"
                     >
-                        <div className="h-[1px] w-12 bg-rose-200" />
-                        <MessageCircle className="w-5 h-5 text-rose-400" />
-                        <div className="h-[1px] w-12 bg-rose-200" />
+                        <div className="h-[1px] w-12 bg-red-200" />
+                        <MessageCircle className="w-5 h-5 text-red-700" />
+                        <div className="h-[1px] w-12 bg-red-200" />
                     </motion.div>
                 </motion.div>
 
@@ -145,15 +145,15 @@ export default function Wishes() {
                                     className="group relative w-[280px]"
                                 >
                                     {/* Background gradient */}
-                                    <div className="absolute inset-0 bg-gradient-to-r from-rose-100/50 to-pink-100/50 rounded-xl transform transition-transform group-hover:scale-[1.02] duration-300" />
+                                    <div className="absolute inset-0 bg-gradient-to-r from-red-100/50 to-pink-100/50 rounded-xl transform transition-transform group-hover:scale-[1.02] duration-300" />
 
                                     {/* Card content */}
-                                    <div className="relative backdrop-blur-sm bg-white/80 p-4 rounded-xl border border-rose-100/50 shadow-md">
+                                    <div className="relative backdrop-blur-sm bg-white/80 p-4 rounded-xl border border-red-100/50 shadow-md">
                                         {/* Header */}
                                         <div className="flex items-start space-x-3 mb-2">
                                             {/* Avatar */}
                                             <div className="flex-shrink-0">
-                                                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-rose-400 to-pink-400 flex items-center justify-center text-white text-sm font-medium">
+                                                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-red-400 to-red-700 flex items-center justify-center text-white text-sm font-medium">
                                                     {wish.name[0].toUpperCase()}
                                                 </div>
                                             </div>
@@ -183,7 +183,7 @@ export default function Wishes() {
                                         {/* Optional: Time indicator for recent messages */}
                                         {Date.now() - new Date(wish.timestamp).getTime() < 3600000 && (
                                             <div className="absolute top-2 right-2">
-                                                <span className="px-2 py-1 rounded-full bg-rose-100 text-rose-600 text-xs font-medium">
+                                                <span className="px-2 py-1 rounded-full bg-rose-100 text-red-800 text-xs font-medium">
                                                     New
                                                 </span>
                                             </div>
@@ -213,7 +213,7 @@ export default function Wishes() {
                                     <input
                                         type="text"
                                         placeholder="Masukan nama kamu..."
-                                        className="w-full px-4 py-2.5 rounded-xl bg-white/50 border border-rose-100 focus:border-rose-300 focus:ring focus:ring-rose-200 focus:ring-opacity-50 transition-all duration-200 text-gray-700 placeholder-gray-400"
+                                        className="w-full px-4 py-2.5 rounded-xl bg-white/50 border border-red-100 focus:border-red-700 focus:ring focus:ring-red-400 focus:ring-opacity-50 transition-all duration-200 text-gray-700 placeholder-gray-400"
                                         required
                                     />
                                 </div>
@@ -232,7 +232,7 @@ export default function Wishes() {
                                     <button
                                         type="button"
                                         onClick={() => setIsOpen(!isOpen)}
-                                        className="w-full px-4 py-2.5 rounded-xl bg-white/50 border border-rose-100 focus:border-rose-300 focus:ring focus:ring-rose-200 focus:ring-opacity-50 transition-all duration-200 text-left flex items-center justify-between"
+                                        className="w-full px-4 py-2.5 rounded-xl bg-white/50 border border-red-100 focus:border-rose-300 focus:ring focus:ring-rose-200 focus:ring-opacity-50 transition-all duration-200 text-left flex items-center justify-between"
                                     >
                                         <span className={attendance ? 'text-gray-700' : 'text-gray-400'}>
                                             {attendance ?
@@ -265,7 +265,7 @@ export default function Wishes() {
                                                         whileHover={{ backgroundColor: 'rgb(255, 241, 242)' }}
                                                         className={`w-full px-4 py-2.5 text-left transition-colors
                                         ${attendance === option.value
-                                                                ? 'bg-rose-50 text-rose-600'
+                                                                ? 'bg-rose-50 text-red-600'
                                                                 : 'text-gray-700 hover:bg-rose-50'
                                                             }`}
                                                     >
@@ -300,7 +300,7 @@ export default function Wishes() {
                                     className={`flex items-center space-x-2 px-6 py-2.5 rounded-xl text-white font-medium transition-all duration-200
                     ${isSubmitting
                                             ? 'bg-gray-300 cursor-not-allowed'
-                                            : 'bg-rose-500 hover:bg-rose-600'}`}
+                                            : 'bg-red-700 hover:bg-red-900'}`}
                                 >
                                     <Send className="w-4 h-4" />
                                     <span>{isSubmitting ? 'Sedang Mengirim...' : 'Kirimkan Doa'}</span>

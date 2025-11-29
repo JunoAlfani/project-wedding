@@ -39,9 +39,8 @@ export default function Location() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="inline-block text-rose-500 font-medium mb-2"
+              className="inline-block text-red-800 font-medium mb-8"
             >
-              Lokasi Acara
             </motion.span>
 
             <motion.h2
@@ -51,7 +50,7 @@ export default function Location() {
               transition={{ delay: 0.3 }}
               className="text-4xl md:text-5xl font-serif text-gray-800 leading-tight"
             >
-              Lokasi
+              Lokasi Acara
             </motion.h2>
 
             <motion.p
@@ -59,7 +58,7 @@ export default function Location() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
-              className="text-gray-700 max-w-md mx-auto"
+              className="text-gray-900 max-w-md mx-auto"
             >
               Temukan lokasi tempat acara bahagia kami diselenggarakan
             </motion.p>
@@ -72,9 +71,9 @@ export default function Location() {
               transition={{ delay: 0.5 }}
               className="flex items-center justify-center gap-4 mt-6"
             >
-              <div className="h-[1px] w-12 bg-rose-200" />
-              <MapPin className="w-5 h-5 text-rose-400" />
-              <div className="h-[1px] w-12 bg-rose-200" />
+              <div className="h-[1px] w-12 bg-red-200" />
+              <MapPin className="w-5 h-5 text-red-800" />
+              <div className="h-[1px] w-12 bg-red-200" />
             </motion.div>
           </motion.div>
 
@@ -108,21 +107,21 @@ export default function Location() {
 
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <MapPin className="w-5 h-5 text-rose-500 mt-1" />
+                  <MapPin className="w-5 h-5 text-red-800 mt-1" />
                   <p className="text-gray-600 flex-1">
                     {config.data.address}
                   </p>
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <CalendarCheck className="w-5 h-5 text-rose-500" />
+                  <CalendarCheck className="w-5 h-5 text-red-800" />
                   <p className="text-gray-600">
                     {formatEventDate(config.data.date)}
                   </p>
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <Clock className="w-5 h-5 text-rose-500" />
+                  <Clock className="w-5 h-5 text-red-800" />
                   <p className="text-gray-600">{config.data.time}</p>
                 </div>
 

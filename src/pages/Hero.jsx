@@ -56,7 +56,7 @@ export default function Hero() {
             animate={{ scale: 1, opacity: 1 }}
             className="flex flex-col items-center p-3 bg-white/70 backdrop-blur-sm rounded-xl border border-rose-100"
           >
-            <span className="text-xl sm:text-2xl font-bold text-rose-600">
+            <span className="text-xl sm:text-2xl font-bold text-red-700">
               {timeLeft[interval]}
             </span>
             <span className="text-xs text-gray-500 capitalize">{interval}</span>
@@ -94,8 +94,8 @@ export default function Hero() {
           >
             <Heart
               className={`w-${Math.floor(Math.random() * 2) + 8} h-${Math.floor(Math.random() * 2) + 8} ${
-                i % 3 === 0 ? 'text-rose-400' :
-                i % 3 === 1 ? 'text-pink-400' :
+                i % 3 === 0 ? 'text-red-400' :
+                i % 3 === 1 ? 'text-red-400' :
                 'text-red-400'
               }`}
               fill="currentColor"
@@ -137,7 +137,7 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="inline-block mx-auto"
           >
-            <span className="px-4 py-1 text-sm bg-rose-50 text-rose-600 rounded-full border border-rose-200">
+            <span className="px-4 py-1 text-sm bg-red-50 text-red-800 rounded-full border border-red-300">
               Catat Tanggal Penting Ini
             </span>
           </motion.div>
@@ -155,7 +155,7 @@ export default function Hero() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="text-3xl sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600"
+              className="text-3xl sm:text-5xl font-serif bg-clip-text text-transparent bg-gradient-to-r from-red-800 to-red-500"
             >
               {config.data.groomName} & {config.data.brideName}
             </motion.h2>
@@ -169,7 +169,7 @@ export default function Hero() {
           >
             <div className="relative px-6 sm:px-8 py-8 ">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-px">
-                <div className="w-20 sm:w-32 h-[2px] bg-gradient-to-r from-transparent via-rose-200 to-transparent" />
+                <div className="w-20 sm:w-32 h-[2px] bg-gradient-to-r from-transparent via-red-500 to-transparent" />
               </div>
 
               <div className="space-y-6 text-center">
@@ -180,7 +180,7 @@ export default function Hero() {
                     transition={{ delay: 0.9 }}
                     className="flex items-center justify-center space-x-2"
                   >
-                    <Calendar className="w-4 h-4 text-rose-400" />
+                    <Calendar className="w-4 h-4 text-red-700" />
                     <span className="text-gray-700 font-medium text-sm sm:text-base">
                       {formatEventDate(config.data.date, "full")}
                     </span>
@@ -192,7 +192,7 @@ export default function Hero() {
                     transition={{ delay: 1 }}
                     className="flex items-center justify-center space-x-2"
                   >
-                    <Clock className="w-4 h-4 text-rose-400" />
+                    <Clock className="w-4 h-4 text-red-700" />
                     <span className="text-gray-700 font-medium text-sm sm:text-base">
                       {config.data.time}
                     </span>
@@ -200,9 +200,9 @@ export default function Hero() {
                 </div>
 
                 <div className="flex items-center justify-center gap-3">
-                  <div className="h-px w-8 sm:w-12 bg-rose-200/50" />
-                  <div className="w-2 h-2 rounded-full bg-rose-200" />
-                  <div className="h-px w-8 sm:w-12 bg-rose-200/50" />
+                  <div className="h-px w-8 sm:w-12 bg-red-300/50" />
+                  <div className="w-2 h-2 rounded-full bg-red-500" />
+                  <div className="h-px w-8 sm:w-12 bg-red-300/50" />
                 </div>
 
                 <motion.div
@@ -217,7 +217,7 @@ export default function Hero() {
                   <p className="text-gray-600 font-medium text-sm">
                     Bapak/Ibu/Saudara/i
                   </p>
-                  <p className="text-rose-500 font-semibold text-lg">
+                  <p className="text-red-700 font-semibold text-lg">
                     {guestName ? guestName : "Tamu"}
                   </p>
                 </motion.div>
@@ -240,7 +240,7 @@ export default function Hero() {
                 ease: "easeInOut"
               }}
             >
-              <Heart className="w-10 sm:w-12 h-10 sm:h-12 text-rose-500 mx-auto" fill="currentColor" />
+              <Heart className="w-10 sm:w-12 h-10 sm:h-12 text-red-700 mx-auto" fill="currentColor" />
             </motion.div>
           </div>
         </motion.div>
@@ -250,6 +250,7 @@ export default function Hero() {
       <section
         id="profile"
         className="min-h-screen relative overflow-hidden flex flex-col items-center justify-center px-3 text-center bg-profile-married bg-cover bg-center bg-no-repeat"
+        style={{ backgroundSize: "250%" }}
       > 
         <motion.div
           initial={{ opacity: 0 }}
@@ -262,7 +263,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-3xl sm:text-4xl font-serif text-rose-700 mb-12"
+            className="text-3xl sm:text-4xl font-serif text-red-700 mb-12"
           >
             Profil Mempelai
           </motion.h2>
@@ -280,9 +281,9 @@ export default function Hero() {
               alt="Bride"
               className="w-48 h-64 object-cover rounded-2xl shadow-lg mb-6 border-4 border-rose-100"
             />
-            <h3 className="text-2xl font-serif text-rose-700">Yuli Maulia Herdianti</h3>
+            <h3 className="text-2xl font-serif text-red-800">Neng Sri Apstati Saadah</h3>
             <p className="text-gray-700 mt-2 max-w-sm">
-              Putri Pertama dari Bapak Heru Sangkana & Ibu Sugiati
+              Putri Ketiga dari Bapak Heru Sangkana, S.Pd & Ibu Sugiati, S.Pd (Almh)
             </p>
           </motion.div>
 
@@ -294,7 +295,7 @@ export default function Hero() {
             className="flex items-center justify-center mb-16"
           >
             <div className="w-12 h-[1px] bg-rose-200" />
-            <span className="mx-4 text-rose-400 text-2xl font-serif">&</span>
+            <span className="mx-4 text-red-700 text-2xl font-serif">&</span>
             <div className="w-12 h-[1px] bg-rose-200" />
           </motion.div>
 
@@ -311,11 +312,110 @@ export default function Hero() {
               alt="Groom"
               className="w-48 h-64 object-cover rounded-2xl shadow-lg mb-6 border-4 border-rose-100"
             />
-            <h3 className="text-2xl font-serif text-rose-700">Ryan Rhidyawan Erlan</h3>
-            <p className="text-gray-700 mt-2 max-w-sm">Putra Pertama dari Bapak Dede Winarya & Ibu Juju</p>
+            <h3 className="text-2xl font-serif text-red-800">Akbar Nur Ramdhani Pratama</h3>
+            <p className="text-gray-700 mt-2 max-w-sm">Putra Pertama dari Bapak Dede Winarya & Ibu Juju, S.Pd</p>
           </motion.div>
         </motion.div>
       </section>
+
+    {/* === TURUT MENGUNDANG SECTION === */}
+    <section
+      id="invitation-list"
+      className="relative min-h-screen py-16 px-6 
+          bg-profile-married bg-cover bg-center bg-no-repeat overflow-hidden"
+    >
+      <div className="container mx-auto max-w-3xl text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-3xl sm:text-4xl font-serif text-red-700 mb-10"
+        >
+          Turut Mengundang
+        </motion.h2>
+      </div>
+
+      {/* === Pihak Perempuan === */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-3xl mx-auto mb-12"
+      >
+        <h3 className="text-2xl font-serif text-red-800 text-center mb-6">
+          Pihak Perempuan
+        </h3>
+
+        <ul className="space-y-4">
+          {[
+            "Hergia Ginanjar SKep.,Ners / Aldila Putri Pratami A, S.T (kaka/ipar)",
+            "Pelda Pur Dwi Purwanto / Euis Tejaninrum, SKep.Ners (paman/bibi)",
+            "Hamzah Irsyad Munggaran A.Md / Fitria Suherliani SKeb Bdn (sepupu)",
+            "Heri Kuntaro (uwa)",
+            "E Suhendar, S.Pd / Enok Komala S.Pd (uwa)",
+            "H. Asep Yusup Zaeni, S.Ag.,M.Pd.I / Dra. Hj. Siti Hodijah (paman / bibi)",
+            "Serma Ramlan Budi Rahayu / Desti Windya Lestari, Amd.Keb (sepupu)",
+            "Maya Syofia, S.Pd Kepala Sekolah SDN Jelegong 02",
+          ].map((item, i) => (
+            <li key={i} className="flex items-start gap-4">
+              <span
+                className="w-8 h-8 flex items-center justify-center
+                          rounded-full bg-red-900 text-white 
+                          text-sm font-medium leading-none shadow-md shrink-0"
+              >
+                {i + 1}
+              </span>
+
+              <p className="text-gray-800 leading-relaxed">{item}</p>
+            </li>
+          ))}
+        </ul>
+      </motion.div>
+
+      {/* === Pihak Laki-Laki === */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-3xl mx-auto"
+      >
+        <h3 className="text-2xl font-serif text-red-800 text-center mb-6">
+          Pihak Laki-Laki
+        </h3>
+
+        <ul className="space-y-4">
+          {[
+            "Keluarga Besar Almarhum BP Idi Kurdi (kakek)",
+            "Keluarga Besar Ahmad Djaelani almarhum (kakek)",
+            "Eno Sudarna (paman)",
+            "Bapak Gunawan J K (uwa)",
+            "Bapak Aep, S, S.Pd.M.AP Pengawas Pembina Kecamatan Kutawaringin",
+            "Bapak H.M. ATIP, S.d.P. M.AP Pengawas Pembina Kecamatan Kutawaringin",
+            "Ibu Meri Komariah, S. Pl,M.Pd Pengawas Pembina PAI Kecamatan Kutawaringin",
+            "Bapak Dani Fajar Gumilar, M.Pd Kepala Sekolah SDN Buana Mekar / Kuaran",
+            "Bapak Suarja, S.Pd.i Kepala Sekolah MTS Al-Patah",
+          ].map((item, i) => (
+            <li key={i} className="flex items-start gap-4">
+              <span
+                className="w-8 h-8 flex items-center justify-center
+                          rounded-full bg-red-900 text-white 
+                          text-sm font-medium leading-none shadow-md shrink-0"
+              >
+                {i + 1}
+              </span>
+
+              <p className="text-gray-800 leading-relaxed">{item}</p>
+            </li>
+          ))}
+        </ul>
+      </motion.div>
+    </section>
+
+
+
     </>
   )
 }

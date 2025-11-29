@@ -47,7 +47,7 @@ export default function Gifts() {
                         transition={{ duration: 0.8 }}
                         className="text-center space-y-4 mb-16"
                     >
-                        <motion.span className="inline-block text-rose-500 font-medium">
+                        <motion.span className="inline-block text-red-700 font-medium">
                             Hadiah Pernikahan
                         </motion.span>
 
@@ -57,17 +57,17 @@ export default function Gifts() {
 
                         {/* Decorative line */}
                         <div className="flex items-center justify-center gap-4 pt-4">
-                            <div className="h-[1px] w-12 bg-rose-200" />
-                            <Gift className="w-5 h-5 text-rose-400" />
-                            <div className="h-[1px] w-12 bg-rose-200" />
+                            <div className="h-[1px] w-12 bg-red-200" />
+                            <Gift className="w-5 h-5 text-red-800" />
+                            <div className="h-[1px] w-12 bg-red-200" />
                         </div>
 
                         <div className="space-y-4 max-w-md mx-auto">
                             <p className="font-arabic text-xl text-gray-800">إن شاء الله</p>
 
                             <p className="text-gray-700">
-                                Insya Allah, Kami Akan Menyalurkan Semua Hadiah yang Diberikan
-                                ke Beberapa Masjid dan Lembaga yang Membutuhkan.
+                                Insya Allah, setiap hadiah yang diberikan akan kami terima 
+                                dengan penuh rasa syukur dan kebahagiaan.
                             </p>
 
                             <div className="space-y-2">
@@ -92,18 +92,18 @@ export default function Gifts() {
                                 className="relative group"
                             >
                                 <div className="absolute inset-0 bg-gradient-to-r from-rose-100/50 to-pink-100/50 rounded-2xl group-hover:scale-105 transition-transform duration-300" />
-                                <div className="relative backdrop-blur-sm bg-white/80 p-6 rounded-2xl shadow-lg border border-rose-100">
+                                <div className="relative backdrop-blur-sm bg-white/80 p-6 rounded-2xl shadow-lg border border-red-100">
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center gap-4">
                                             <div className="w-12 h-12 rounded-lg bg-white p-2 shadow-sm">
-                                                <Building2 className="w-full h-full text-rose-500" />
+                                                <Building2 className="w-full h-full text-red-800" />
                                             </div>
                                             <div>
                                                 <h3 className="font-medium text-gray-800">{account.bank}</h3>
                                                 <p className="text-sm text-gray-500">{account.accountName}</p>
                                             </div>
                                         </div>
-                                        <Wallet className="w-5 h-5 text-rose-400" />
+                                        <Wallet className="w-5 h-5 text-red-800" />
                                     </div>
 
                                     <div className="mt-4">
@@ -113,16 +113,16 @@ export default function Gifts() {
                                             <motion.button
                                                 whileHover={{ scale: 1.05 }}
                                                 whileTap={{ scale: 0.95 }}
-                                                onClick={() => copyToClipboard(account.accountNumber, account.bank)}
-                                                className="flex items-center gap-1 text-rose-500 hover:text-rose-600"
+                                                onClick={() => copyToClipboard(account.accountNumber, account.accountNumber)}
+                                                className="flex items-center gap-1 text-red-800 hover:text-red-900"
                                             >
-                                                {copiedAccount === account.bank ? (
+                                                {copiedAccount === account.accountNumber ? (
                                                     <CheckCircle className="w-4 h-4" />
                                                 ) : (
                                                     <Copy className="w-4 h-4" />
                                                 )}
                                                 <span className="text-sm">
-                                                    {copiedAccount === account.bank ? 'Copied!' : 'Copy'}
+                                                    {copiedAccount === account.accountNumber ? 'Copied!' : 'Copy'}
                                                 </span>
                                             </motion.button>
                                         </div>
