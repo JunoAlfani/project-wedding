@@ -281,7 +281,7 @@ export default function Hero() {
               alt="Bride"
               className="w-48 h-64 object-cover rounded-2xl shadow-lg mb-6 border-4 border-rose-100"
             />
-            <h3 className="text-2xl font-serif text-red-800">Neng Sri Apstati Sa'adah, S.Pd</h3>
+            <h3 className="text-2xl font-serif text-red-800">Neng Sri Apsati Sa'adah, S.Pd</h3>
             <p className="text-gray-700 mt-2 max-w-sm">
               Putri Ketiga dari Bapak Heru Sangkana, S.Pd & Ibu Sugiati, S.Pd (Almh)
             </p>
@@ -351,7 +351,7 @@ export default function Hero() {
         <ul className="space-y-4">
           {[
             "Hergia Ginanjar SKep.,Ners / Aldila Putri Pratami A, S.T (kaka/ipar)",
-            "Pelda Pur Dwi Purwanto / Euis Tejaninrum, SKep.Ners (paman/bibi)",
+            "Pelda Pur Dwi Purwanto / Euis Tejaningrum, SKep.Ners (paman/bibi)",
             "Hamzah Irsyad Munggaran A.Md / Fitria Suherliani SKeb Bdn (sepupu)",
             "Heri Kuntaro (uwa)",
             "E Suhendar, S.Pd / Enok Komala S.Pd (uwa)",

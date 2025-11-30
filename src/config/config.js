@@ -75,7 +75,7 @@ const config = {
                 // Account number
                 accountNumber: "0126779690100",
                 // Account holder name (all uppercase)
-                accountName: "Neng Sri Apstati Saadah ",
+                accountName: "Neng Sri Apsati Sa'adah ",
             },
             {
                 bank: "Bank bjb",
