@@ -45,15 +45,17 @@ export default function Gifts() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={hasAnimated ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.8 }}
-                        className="text-center space-y-4 mb-16"
+                        className="text-center space-y-4"
                     >
-                        <motion.span className="inline-block text-red-700 font-medium">
-                            Hadiah Pernikahan
-                        </motion.span>
+                        <div className="mt-10">
+                            <motion.span className="inline-block text-red-700 font-medium">
+                                Hadiah Pernikahan
+                            </motion.span>
 
-                        <motion.h2 className="text-4xl md:text-5xl font-serif text-gray-800">
-                            Berikan Hadiah
-                        </motion.h2>
+                            <motion.h2 className="text-4xl md:text-5xl font-serif text-gray-800 mt-3">
+                                Berikan Hadiah
+                            </motion.h2>
+                        </div>
 
                         {/* Decorative line */}
                         <div className="flex items-center justify-center gap-4 pt-4">

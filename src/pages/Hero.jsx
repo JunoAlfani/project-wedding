@@ -281,7 +281,7 @@ export default function Hero() {
               alt="Bride"
               className="w-48 h-64 object-cover rounded-2xl shadow-lg mb-6 border-4 border-rose-100"
             />
-            <h3 className="text-2xl font-serif text-red-800">Neng Sri Apstati Saadah</h3>
+            <h3 className="text-2xl font-serif text-red-800">Neng Sri Apstati Saadah, S.Pd</h3>
             <p className="text-gray-700 mt-2 max-w-sm">
               Putri Ketiga dari Bapak Heru Sangkana, S.Pd & Ibu Sugiati, S.Pd (Almh)
             </p>
@@ -312,7 +312,7 @@ export default function Hero() {
               alt="Groom"
               className="w-48 h-64 object-cover rounded-2xl shadow-lg mb-6 border-4 border-rose-100"
             />
-            <h3 className="text-2xl font-serif text-red-800">Akbar Nur Ramdhani Pratama</h3>
+            <h3 className="text-[23px] font-serif text-red-800"> Akbar Nur Ramdhani Pratama, S.Pd </h3>
             <p className="text-gray-700 mt-2 max-w-sm">Putra Pertama dari Bapak Dede Winarya & Ibu Juju, S.Pd</p>
           </motion.div>
         </motion.div>
