@@ -1,3 +1,4 @@
+
 // Revised Gallery.jsx based on the client's requested layout
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
@@ -23,7 +24,7 @@ export default function Gallery() {
       <motion.h2
         className="text-4xl font-serif text-gray-800 mb-10 mt-5"
         initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
         Our Gallery
@@ -32,7 +33,7 @@ export default function Gallery() {
       {/* GRID LAYOUT LIKE CLIENT EXAMPLE */}
       <div className="grid grid-cols-3 md:grid-cols-4 gap-4 w-full max-w-4xl">
         {images.map((item, index) => (
-          <motion.div
+          <div
             key={index}
             className="w-full h-40 md:h-44 bg-white rounded-md overflow-hidden cursor-pointer shadow-md hover:shadow-xl"
             whileHover={{ scale: 1.03 }}
@@ -43,14 +44,14 @@ export default function Gallery() {
               alt={`Gallery ${index + 1}`}
               className="w-full h-full object-cover"
             />
-          </motion.div>
+          </div>
         ))}
       </div>
 
       {/* MODAL POPUP */}
       <AnimatePresence>
         {selectedImage && (
-          <motion.div
+          <div
             className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[200] p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -66,7 +67,7 @@ export default function Gallery() {
               exit={{ scale: 0.7, opacity: 0 }}
               transition={{ duration: 0.25 }}
             />
-          </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </section>
