@@ -112,22 +112,6 @@ export default function LandingPage({ onOpenInvitation }) {
                     <div className="h-px w-16 bg-rose-200/50" />
                   </div>
 
-                  {/* Tanggal & waktu */}
-                  <div className="flex flex-col gap-2 mb-4 items-center">
-                    <div className="inline-flex flex-col items-center space-y-1 bg-white/80 px-6 py-3 rounded-xl">
-                      <Calendar className="w-5 h-5 text-red-800" />
-                      <p className="text-gray-700 font-medium">
-                        {formatEventDate(config.data.date)}
-                      </p>
-                    </div>
-
-                    <div className="inline-flex flex-col items-center space-y-1 bg-white/80 px-6 py-3 rounded-xl">
-                      <Clock className="w-5 h-5 text-red-800" />
-                      <p className="text-gray-700 font-medium">
-                        {config.data.time}
-                      </p>
-                    </div>
-                  </div>
 
                   {/* Nama pasangan */}
                   <div className="text-center space-y-2">
