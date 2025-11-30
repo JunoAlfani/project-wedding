@@ -358,6 +358,7 @@ export default function Hero() {
             "H. Asep Yusup Zaeni, S.Ag.,M.Pd.I / Dra. Hj. Siti Hodijah (paman / bibi)",
             "Serma Ramlan Budi Rahayu / Desti Windya Lestari, Amd.Keb (sepupu)",
             "Maya Syofia, S.Pd Kepala Sekolah SDN Jelegong 02",
+            "Euis Tejaningrum, SKep.,Ners"
           ].map((item, i) => (
             <li key={i} className="flex items-start gap-4">
               <span
