@@ -94,7 +94,7 @@ export default function Gifts() {
                                 className="relative group"
                             >
                                 <div className="absolute inset-0 bg-gradient-to-r from-red-100/50 to-red-100/50 rounded-2xl group-hover:scale-105 transition-transform duration-300" />
-                                <div className="relative backdrop-blur-sm bg-white/80 p-6 rounded-2xl shadow-lg border border-red-200">
+                                <div className="relative backdrop-blur-sm bg-white/80 p-6 rounded-2xl shadow-lg border border-red-100">
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center gap-4">
                                             <div className="w-12 h-12 rounded-lg bg-white p-2 shadow-sm">
