@@ -281,7 +281,7 @@ export default function Hero() {
               alt="Bride"
               className="w-48 h-64 object-cover rounded-2xl shadow-lg mb-6 border-4 border-rose-100"
             />
-            <h3 className="text-2xl font-serif text-red-800">Neng Sri Apstati Saadah, S.Pd</h3>
+            <h3 className="text-2xl font-serif text-red-800">Neng Sri Apstati Sa'adah, S.Pd</h3>
             <p className="text-gray-700 mt-2 max-w-sm">
               Putri Ketiga dari Bapak Heru Sangkana, S.Pd & Ibu Sugiati, S.Pd (Almh)
             </p>
@@ -394,7 +394,7 @@ export default function Hero() {
             "Bapak Gunawan J K (uwa)",
             "Bapak Aep, S, S.Pd.M.AP Pengawas Pembina Kecamatan Kutawaringin",
             "Bapak H.M. ATIP, S.d.P. M.AP Pengawas Pembina Kecamatan Kutawaringin",
-            "Ibu Meri Komariah, S. Pl,M.Pd Pengawas Pembina PAI Kecamatan Kutawaringin",
+            "Ibu Meri Komariah, S.Pd.I,M.Pd Pengawas Pembina PAI Kecamatan Kutawaringin",
             "Bapak Dani Fajar Gumilar, M.Pd Kepala Sekolah SDN Buana Mekar / Kuaran",
             "Bapak Suarja, S.Pd.i Kepala Sekolah MTS Al-Patah",
           ].map((item, i) => (
